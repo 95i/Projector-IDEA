@@ -34,6 +34,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run Ngrok
         run: |
-          snap install ngrok
-          ngrok authtoken 23VIQWYRDmLt234aN2Zd70pbk6Q_ur3UmaGe861iJAJCx9Zb
-          ngrok http 8887
+          sudo snap install ngrok
+          sudo ngrok authtoken 23VIQWYRDmLt234aN2Zd70pbk6Q_ur3UmaGe861iJAJCx9Zb
+          sudo ngrok http 8887
