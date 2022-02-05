@@ -31,7 +31,7 @@ jobs:
         run: |
           sudo snap install ngrok
           sudo ngrok authtoken 23VIQWYRDmLt234aN2Zd70pbk6Q_ur3UmaGe861iJAJCx9Zb
-          sudo echo | ngrok http 8887 -log=stdout &
+          sudo ngrok http 8887 -log=stdout &
 
       # Runs a single command using the runners shell
       - name: Run Docker
