@@ -25,17 +25,19 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Run Docker
-        run: |
-          docker pull wlxu/projector-idea-u:2020
-          docker run --rm -p 8887:8887 -itd wlxu/projector-idea-u:2020
-
+      
       # Runs a set of commands using the runners shell
       - name: Run Ngrok
         run: |
           sudo snap install ngrok
           sudo ngrok authtoken 23VIQWYRDmLt234aN2Zd70pbk6Q_ur3UmaGe861iJAJCx9Zb
           sudo echo | ngrok http 8887 -log=stdout &
+
+      # Runs a single command using the runners shell
+      - name: Run Docker
+        run: |
+          docker pull wlxu/projector-idea-u:2020
+          docker run --rm -p 8887:8887 -itd wlxu/projector-idea-u:2020
+
             
             
