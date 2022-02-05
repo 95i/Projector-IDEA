@@ -37,7 +37,7 @@ jobs:
       - name: Run Docker
         run: |
           docker pull wlxu/projector-idea-u:2020
-          docker run --rm -p 8887:8887 -it 11710650c3b0
+          docker run --rm -p 8887:8887 wlxu/projector-idea-u:2020
 
             
             
