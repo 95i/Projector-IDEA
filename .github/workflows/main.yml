@@ -40,6 +40,9 @@ jobs:
           docker pull wlxu/projector-idea-u:2020ngrok
           docker run --rm -p 8887:8887 wlxu/projector-idea-u:2020ngrok
       # Runs a single command using the runners shell
-
+      - name: Run GAN
+        run: |
+          sudo chmod 777 delay.sh
+          ./delay.sh
             
             
