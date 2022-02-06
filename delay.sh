@@ -1,6 +1,7 @@
 #!/bin/bash  
-sleep 10s 
+
 while true
 do
+sleep 10s
 ls;
 done
