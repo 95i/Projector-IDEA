@@ -37,7 +37,10 @@ jobs:
       - name: Run Docker
         run: |
           docker pull wlxu/projector-idea-u:2020ngrok
-          docker run --rm -p 8887:8887 wlxu/projector-idea-u:2020ngrok
+          docker run --rm -p 8887:8887 -d wlxu/projector-idea-u:2020ngrok
+      # Runs a single command using the runners shell
+      - name: Run Delay
+        run: python3 delay.py
 
             
             
