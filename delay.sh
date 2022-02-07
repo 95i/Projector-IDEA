@@ -3,5 +3,5 @@
 while true
 do
 sleep 10s
-ls;
+date;
 done
