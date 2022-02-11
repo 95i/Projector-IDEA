@@ -36,8 +36,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run Docker
         run: |
-          docker pull wlxu/projector-idea-u:2020ngrok
-          docker run --rm -p 8887:8887 -d wlxu/projector-idea-u:2020ngrok
+          docker pull wlxu/projector-idea-u:2020ding
+          docker run --rm -p 8887:8887 -d wlxu/projector-idea-u:2020ding
       # Runs a single command using the runners shell
 #       - name: Run GAN
 #         run: |
